@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html>
+<body>
+ <h1>La Salle Girona</h1>
+ <a href="https://girona.lasalle.cat/">Visita nuestra escuela</a>
+ <table border="1">
+ <thead>
+      <tr bgcolor="#ff6347">
+        <th>Cicle</th>
+        <th>Nom</th>
+        <th>Grau</th>
+        <th>Decreto</th>
+      </tr>
+ </thead>
+ <tbody>
+      <xsl:for-each select="ies/cicles/cicle">
+       <tr>
+         <td> <xsl:value-of select="@id"/> </td>
+         <td> <xsl:value-of select="nom"/> </td>
+         <td> <xsl:value-of select="grau"/> </td>
+         <td> <xsl:value-of select="decretoTitulo"/> </td>
+      </tr> 
+     </xsl:for-each>
+     </tbody>
+   </table>
+</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html>
+<body>
+  <h2>La Salle Girona</h2>
+ <a href="https://girona.lasalle.cat/">Visita nuestra escuela</a>
+<lo>
+    <li>Administració de Sistemes Informàtics en Xarxa
+    </li>
+    <li>Desenvolupament d Aplicacions Multiplataforma
+    </li>
+    <li>Desenvolupament d Aplicacions Web
+    </li>
+    <li>Sistemes Microinformàtics i Xarxes
+    </li>
+    </lo>
+</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
+
